@@ -1,0 +1,34 @@
+{
+  "name": "knowledge-search-rag",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "ingest": "tsx --env-file=.env.local scripts/ingest.ts",
+    "eval": "tsx --env-file=.env.local scripts/eval.ts",
+    "slack": "tsx --env-file=.env.local scripts/slack-bot.ts",
+    "seed-slack-user": "tsx --env-file=.env.local scripts/seed-slack-user.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0",
+    "@napi-rs/canvas": "^1.0.3",
+    "@slack/bolt": "^4.6.0",
+    "@slack/web-api": "^7.11.0",
+    "@supabase/supabase-js": "^2.111.0",
+    "js-tiktoken": "^1.0.21",
+    "next": "16.2.12",
+    "pdfjs-dist": "^6.2.108",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tsx": "^4.23.5",
+    "typescript": "^5"
+  }
+}

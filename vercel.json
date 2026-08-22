@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/sharepoint-sync",
+      "schedule": "0 0 1 * *"
+    },
+    {
+      "path": "/api/cron/monthly-audit-report",
+      "schedule": "0 1 1 * *"
+    },
+    {
+      "path": "/api/cron/retry-failed-ingests",
+      "schedule": "0 3 * * 1"
+    }
+  ]
+}
